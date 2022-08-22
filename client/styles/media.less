@@ -1,0 +1,201 @@
+// Mode: Tablet
+@tablet: ~"(max-width: 500px)";
+@tablet-area: 480px;
+
+// Area site
+.area {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 680px) {
+  .header {
+    //min-width: 645px;
+
+    &__link {
+      border-radius: 5px;
+      width: 150px;
+      margin: 5px 0;
+    }
+  }
+}
+  @media screen and (max-width: 500px) {
+    .header-container,
+    .page-container,
+    .footer-container {
+      //max-width: 500px;
+    }
+
+    .header-container {
+      max-height: 200px;
+    }
+
+  .header {
+    &__wrapper {
+
+    }
+
+    &__link {
+      &__logo-container,
+      &__tabs,
+      &__user {
+        flex: none;
+      }
+
+      &:hover,
+      &.active {
+        color: @green;
+        background: @beige;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .about {
+    min-width: 490px;
+    margin: 0 auto;
+  }
+
+  .plant-add {
+    min-width: 300px;
+  }
+
+  .plants {
+    min-width: 500px;
+
+    &__additional {
+      justify-content: center;
+
+      p {
+        margin: 0 0 5px 5px;
+      }
+    }
+
+    &__list {
+      min-width: 500px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .edit {
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 10px 0;
+  }
+
+  .info {
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 10px 0;
+
+    &__common {
+
+      justify-content: start;
+      align-items: start;
+      text-align: center;
+
+      &__buttons {
+
+        align-self: center;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 700px) {
+  .plant-info__dots {
+    display: none;
+  }
+
+  .plant-info {
+    &__care {
+
+      img {
+        padding: 10px;
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .plants {
+
+    &__additional {
+      justify-content: center;
+      align-items: center;
+
+      p {
+        margin: 0 40px 5px 5px;
+      }
+    }
+
+  }
+
+  .plant-info {
+    &__care {
+
+      .info {
+        margin: 0 20px;
+      }
+      img {
+        padding: 20px;
+      }
+      p {
+        padding: 20px;
+
+      }
+      h2 {
+        margin-left: 20px;
+
+        float: none;
+        display: inline-block;
+      }
+    }
+
+  }
+
+  .info {
+    min-width: 300px;
+    margin: 0 30px;
+    padding: 0 20px;
+
+  }
+}
+@media screen and (max-width: 780px) {
+  .plant-info {
+
+    &__text-item {
+      /*h2 {
+        float: none;
+      }*/
+      p {
+        clear: both;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .info {
+
+    margin: 0 30px;
+
+  }
+}
